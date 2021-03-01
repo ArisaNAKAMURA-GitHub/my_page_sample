@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: "Yu Gothic Merdium", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+
+}
+
+h1{
+    font-family: "Yu Micho", "ヒラギノ明朝 ProN W3", "HG明朝E", "MS P明朝", "MS 明朝", Helvetica, sans-serif;
+
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(33,34,53);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+.title{
+    font-size:30px;
+    color: #fff;
+}
+
+main{
+    width:100vw;
+}
+
+.mainview1{
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/img/island.jpg);
+    background-size: cover;
+}
+
+.description1, .description2{
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.profile{
+    width: 100%;
+    padding: 50px 0;
+    background-color: rgb(245,245,245);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.profile2{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+}
+
+.name, ul{
+    margin: 10px;
+    padding: 10px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+.item1 li{
+    font-weight:bolder
+}
+
+.item2 li{
+    font-weight: lighter;
+}
+
+h2{
+    width:90%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.rec{
+    width: 95%;
+    /*いらんかった height: 500px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.recommend{
+    width: 31%;
+    /*いらんかった height: 100%; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /*いらんかった justify-content: space-around; */
+    
+}
+
+.recommend img{
+    width:100%;
+}
+
+.recommend .ti{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.discribe{
+    height: 40%;
+}
+
+.button{
+    /* 右に寄せる方法が分からんかったからここカンニングした */
+    text-align: right;
+}
+
+button{
+    color: #fff;
+    background-color: rgb(33,34,53);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    
+}
+
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* でもここはtext-align:center;で全て網羅できる */
+    margin-bottom: 30px;
+    
+}
+
+.contact h2, .contact p, .contact button{
+    margin-bottom: 50px;
+}
+
+.contact button{
+    width: 200px;
+    height: 80px;
+
+}
+
+footer{
+    /*いらんかった width: 100vw; */
+    padding: 20px;
+    margin-top: 80px;
+    color:#fff;
+    background-color: rgb(33,34,53);
+    text-align: center;
+}
+
+@media screen and (max-width:800px){
+    .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .rec{
+        /*いらんかった height:1800px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommend{
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+
+
+}
